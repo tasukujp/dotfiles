@@ -18,7 +18,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # 大文字、小文字を�
 setopt hist_ignore_dups
 setopt no_beep
 setopt nonomatch
-setopt share_history
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
