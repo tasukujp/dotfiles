@@ -10,6 +10,11 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+zstyle ':completion:*' list-colors "${LS_COLORS}" # 補完候補に色を付ける
+zstyle ':completion:*:default' menu select=1 # 補完候補をハイライト
+zstyle ':completion::complete:*' use-cache true # キャッシュ利用による補完の高速化
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # 大文字、小文字を区別せず補完
+
 setopt hist_ignore_dups
 setopt no_beep
 setopt nonomatch
