@@ -17,3 +17,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 git clone https://github.com/zsh-users/zsh-completions ~/.zsh/zsh-completions
 git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-searc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+
+# Add asdf plugins
+asdf plugin add ruby
+asdf plugin add golang
+asdf plugin add nodejs
