@@ -1,5 +1,7 @@
 #!/bin/bash
 
+softwareupdate --install-rosetta --agree-to-license
+
 # Check Homebrew
 if [ ! `which brew` ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -15,7 +17,7 @@ brew bundle
 # Install zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ~/.zsh/zsh-completions
-git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-searc
+git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 
 # Add asdf plugins
